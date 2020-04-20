@@ -80,14 +80,13 @@ form input:checked + label[for="no"]{
     background-size: 18px;
     background-position: 0 2px;
 }
-form input:checked + label[for="male"],
-form input:checked + label[for="female"]{
-    /* background: url('../image/icon/radio-btn-checked.png') no-repeat; */
+form input:checked + label[for="male"],form input:checked + label[for="female"]{
     background: url('../image/icon/checkbox-btn-checked.png') no-repeat;
     background-size: 18px;
     background-position: 0 2px;
 }
 form input,form select,form textarea{
+    background-color: #ffffff!important;
     display: block;
     width: 100%;
     padding: 10px 12px;

@@ -92,12 +92,11 @@ form input,form select,form textarea{
     padding: 10px 12px;
     box-sizing: border-box;
     outline: none;
-    border: 1px solid #080808;
+    border: 2px solid #aaaaaa;
     border-radius: 5px;
     box-shadow: 1px 1px 5px #dddddd;
     font-size: 18px;
     transition: all 0.3s ease;
-    text-transform: capitalize;
 }
 form select{
     -moz-appearance: none;
@@ -105,6 +104,7 @@ form select{
     -webkit-appearance: none;
     -ms-appearance: none;
 
+    text-transform: capitalize;
     padding: 10px 50px 10px 10px;
     background: url('../image/icon/select.png') no-repeat 98% center;
     cursor: pointer;
@@ -158,4 +158,23 @@ form input[type="submit"]{
 }
 form input[type="submit"]:hover{
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+input.valid{
+    border-color: yellowgreen;
+}
+input.invalid{
+    border-color: darkorange;
+}
+input + p{
+   opacity: 0;
+   height: 0;
+}
+input.invalid + p{
+    color: darkorange;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 22px;
+    opacity: 1;
+    height: auto;
 }

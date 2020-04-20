@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Manrope&display=swap');
+*{
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background: linear-gradient(to bottom, #f7f7f7, #f1f0f0); 
+
+}
+main{
+    height: auto;
+    /* background-color: aqua; */
+    padding: 20px 0;
+}
+form{
+    height: 100%;
+    /* max-height: 100vh; */
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: khaki; */
+    /* background-color: ; */
+}
+form fieldset{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 5px;
+    border: 0;
+}
+form fieldset legend {
+    font-size: 28px;
+    text-align: center;
+    padding: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0.9, 0.5, 0.5);
+
+}
+form label{
+    display: block;
+    /* margin: 5px 0; */
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+form input[type="checkbox"],form input[type="radio"]{
+    display: inline-block;
+    width: initial;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+form label.inline-label{
+    display: inline-block;
+    margin: initial;
+    margin: 3px 0px;
+    font-size: initial;
+    text-shadow: initial;
+    padding-left: 26px;
+    cursor: pointer;
+}
+form label[for="male"],form label[for="female"]{
+    background: url('../image/icon/checkbox-btn-unchecked.png') no-repeat;
+    background-size: 18px;
+    background-position: 0 2px;
+}
+form label[for="yes"],form label[for="no"]{
+    background: url('../image/icon/radio-btn-unchecked.png') no-repeat;
+    background-size: 18px;
+    background-position: 0 2px;
+}
+form input:checked + label[for="yes"],
+form input:checked + label[for="no"]{
+    background: url('../image/icon/radio-btn-checked.png') no-repeat;
+    background-size: 18px;
+    background-position: 0 2px;
+}
+form input:checked + label[for="male"],
+form input:checked + label[for="female"]{
+    /* background: url('../image/icon/radio-btn-checked.png') no-repeat; */
+    background: url('../image/icon/checkbox-btn-checked.png') no-repeat;
+    background-size: 18px;
+    background-position: 0 2px;
+}
+form input,form select,form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #080808;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #dddddd;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+form select{
+    -moz-appearance: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+
+    padding: 10px 50px 10px 10px;
+    background: url('../image/icon/select.png') no-repeat 98% center;
+    cursor: pointer;
+    background-size: 20px;
+}
+form input[name="userName"],form input[name="userEmail"]{
+    padding: 10px 10px 10px 50px;
+}
+form input[name="userName"]{
+    background: url('../image/icon/name.png') no-repeat;
+    background-size: 30px;
+    background-position: 5px 6px;
+}
+form input[name="userName"]:focus{
+    background: url('../image/icon/name-focus.png') no-repeat;
+    background-size: 30px;
+    background-position: 5px 6px;
+    filter: grayscale(50%)
+}
+form input[name="userEmail"]{
+    background: url('../image/icon/email.png') no-repeat;
+    background-size: 28px;
+    background-position: 7px 8px;
+}
+form input[name="userEmail"]:focus{
+    background: url('../image/icon/email-focus.png') no-repeat;
+    background-size: 28px;
+    background-position: 7px 8px;
+    filter: grayscale(50%)
+}
+form select option{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+form input:hover,form select:hover,form input:focus,form select:focus,form textarea:hover,form textarea:focus{
+    box-shadow: inset 1px 1px 5px #aaaaaa;
+}
+/* form input:checked [] */
+form input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background: linear-gradient(to right, #0f2027, #242323, #0f2027);
+    color: #f7f7f7;
+    font-weight: 600;
+    letter-spacing: 2px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+    border: 0;
+}
+form input[type="submit"]:hover{
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
